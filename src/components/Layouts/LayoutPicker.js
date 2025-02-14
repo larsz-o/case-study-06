@@ -13,6 +13,7 @@ const LayoutPicker = () => {
   const [completedPercent, updateCompletedPercent] = useState();
 
   useEffect(() => {
+    window.scrollTo(0,0)
     updateLayoutNumber(scene.layoutNumber);
     let completedPercent = (
       (parseInt(scene.scene_number) / Object.keys(lesson).length) *
